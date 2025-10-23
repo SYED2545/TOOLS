@@ -108,9 +108,53 @@
             cursor: pointer;
         }
 
+        /* Top Ad Section */
+        .top-ad-section {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .ad-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .ad-space {
+            background: var(--light);
+            border: 2px dashed var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ad-space.horizontal {
+            max-width: 728px;
+            min-height: 90px;
+        }
+
+        .ad-space.vertical {
+            max-width: 300px;
+            min-height: 250px;
+        }
+
+        .ad-code {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
         .hero {
             text-align: center;
-            padding: 4rem 0 3rem;
+            padding: 2rem 0 3rem;
         }
 
         .hero h1 {
@@ -353,42 +397,6 @@
             text-align: center;
         }
 
-        .ad-label {
-            font-size: 0.8rem;
-            color: var(--gray);
-            margin-bottom: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .ad-space {
-            background: var(--light);
-            border: 2px dashed var(--light-gray);
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            margin: 0 auto;
-            max-width: 728px;
-            min-height: 90px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .ad-space.horizontal {
-            max-width: 728px;
-            min-height: 90px;
-        }
-
-        .ad-space.vertical {
-            max-width: 300px;
-            min-height: 250px;
-        }
-
-        .ad-code {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -429,6 +437,16 @@
         .feature-card p {
             color: var(--gray);
             line-height: 1.6;
+        }
+
+        /* Bottom Ad Section */
+        .bottom-ad-section {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            margin: 3rem 0;
+            text-align: center;
         }
 
         footer {
@@ -614,7 +632,7 @@
             }
             
             .hero {
-                padding: 2.5rem 0 2rem;
+                padding: 1.5rem 0 2rem;
             }
             
             .hero h1 {
@@ -696,6 +714,16 @@
     </header>
 
     <main class="container">
+        <!-- Top Ad Section -->
+        <section class="top-ad-section">
+            <div class="ad-label">Advertisement</div>
+            <div class="ad-space horizontal">
+                <!-- Google AdSense Horizontal Banner -->
+                <!-- Replace with your AdSense code -->
+                <div class="ad-code">Google AdSense Top Banner (728x90)</div>
+            </div>
+        </section>
+
         <section class="hero">
             <h1>Compress Images Without Losing Quality</h1>
             <p>Reduce image file size for faster websites and easier sharing. Our tool supports JPG, PNG, and WebP formats with advanced optimization algorithms.</p>
@@ -850,6 +878,16 @@
                 </div>
                 <h3>Mobile Friendly</h3>
                 <p>Works perfectly on all devices - desktop, tablet, and mobile. Compress images on the go with our responsive design.</p>
+            </div>
+        </section>
+
+        <!-- Bottom Ad Section -->
+        <section class="bottom-ad-section">
+            <div class="ad-label">Advertisement</div>
+            <div class="ad-space horizontal">
+                <!-- Google AdSense Horizontal Banner -->
+                <!-- Replace with your AdSense code -->
+                <div class="ad-code">Google AdSense Bottom Banner (728x90)</div>
             </div>
         </section>
     </main>
